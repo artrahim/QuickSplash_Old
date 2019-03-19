@@ -87,14 +87,21 @@ body {
 }
 
 .box-outer{
-	text-align: center
+	text-align: center;
 }
 
 .square-box{
 	width: 85%;
 	height: 34vh;
 	border: 1px solid black;
-	display: inline-block
+	display: inline-block;
+	border-radius:5px;
+		vertical-align: middle;
+}
+
+.image{
+	width:96%;
+	border-radius: 50%;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
