@@ -6,13 +6,23 @@
 		<meta name="author" content="Niroojen Thambimuthu">
 		<link href="test.css" type="text/css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-	
+		<button class="backButton" onclick="goBack()">Go Back</button>
+		<div class="ProfileSign"><h3>Profile Page</h3></div>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
+		
 		<div class="box">
 			<div class="row header">
 				</br>
-				<div class="username">USERNAME</div>
+				<h4 class="username">USERNAME</h4>
+				<div class="circle"></div>
 				</br></br>
 				<div class="online">LastONline</div>
 				</br></br>
@@ -31,9 +41,16 @@
 				<div class="column middle">
 					
 					
-					<div class="box-outer">
-						</br></br></br>
+					<div class="box-inner">
+						</br>
 						<img src="profilepic.jpg" alt="profilepic" class="image">
+					</div>
+					<div>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
 					</div>
 					
 					
