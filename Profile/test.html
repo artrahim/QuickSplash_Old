@@ -10,8 +10,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<button class="backButton" onclick="goBack()">Go Back</button>
-		<div class="ProfileSign"><h3>Profile Page</h3></div>
+		
 		<script>
 			function goBack() {
 				window.history.back();
@@ -20,9 +19,20 @@
 		
 		<div class="box">
 			<div class="row header">
-				</br>
+			
+				<div class="header-box">
+					<div class="left">
+						<button class="backButton" onclick="goBack()">Go Back</button>
+					</div>
+					<div class="center">
+						<h2 class="Sign">Profile Page</h2>
+					</div>
+				</div>
+			
+				
 				<h4 class="username">USERNAME</h4>
 				<div class="circle"></div>
+				<meter value="0.6"></meter>
 				</br></br>
 				<div class="online">LastONline</div>
 				</br></br>

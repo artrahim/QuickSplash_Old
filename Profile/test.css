@@ -39,15 +39,21 @@ body {
   border: 3px solid #73AD21;
 }
 
-.ProfileSign{
-	text-align: center;
-	position: fixed;
+.center h2{
+	margin:0;
 }
 
 .header {
   background-color: silver;
   text-align: center;
   min-width: 200px;
+}
+
+.header-box{
+	display: flex;
+  justify-content: center;
+  background-color: green;
+  text-align: left;
 }
 
 .username{
