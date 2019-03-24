@@ -74,7 +74,7 @@ let smileySplash = stage.addChild(new c.Container());
 let scaredSplash = stage.addChild(new c.Container());
 
 red = new Image();
-red.src = "images/redSplash.png";
+red.src = "../images/redSplash.png";
 red.onload = () => {
     // Adding images...
     let redSplash = new c.Bitmap(red.src);
@@ -86,7 +86,7 @@ red.onload = () => {
 };
 
 blue = new Image();
-blue.src = "images/blueSplash.png";
+blue.src = "../images/blueSplash.png";
 blue.onload = () => {
     let blueSplash = new c.Bitmap(blue.src);
     blueSplash.x = 400;
@@ -96,7 +96,7 @@ blue.onload = () => {
 };
 
 smiley = new Image();
-smiley.src = "images/simley.png";
+smiley.src = "../images/simley.png";
 smiley.onload = () => {
     let smileyFace = new c.Bitmap(smiley.src);
     smileyFace.x = 515;
@@ -106,7 +106,7 @@ smiley.onload = () => {
 };
 
 orange = new Image();
-orange.src = "images/orangeSplash.png";
+orange.src = "../images/orangeSplash.png";
 orange.onload = () => {
     let orangeSplash = new c.Bitmap(orange.src);
     orangeSplash.x = 800;
@@ -116,7 +116,7 @@ orange.onload = () => {
 };
 
 scared = new Image();
-scared.src = "images/scared.png";
+scared.src = "../images/scared.png";
 scared.onload = () => {
     let scaredFace = new c.Bitmap(scared.src);
     scaredFace.x = 910;
@@ -126,7 +126,7 @@ scared.onload = () => {
 };
 
 pink = new Image();
-pink.src = "images/pinkSplash.png";
+pink.src = "../images/pinkSplash.png";
 pink.onload = () => {
     let pinkSplash = new c.Bitmap(pink.src);
     pinkSplash.x = 1200;
