@@ -45,11 +45,33 @@
 				<div class="column side">
 					<div class="box-outer">
 						</br></br>
-						<div class="square-box">Player stats</div>
+						<div class="square-box" id="Stats">Player stats</div>
+						<div class="square-box" id="Stats1">
+							<p>Total points</p>
+							<p>Total games played</p>
+							<p>Total Hours played</p>
+							<p>Best response time</p>
+							<p>Most voted question of all time</p>
+							<p>Funniest response</p>
+						</div>
 						</br></br>
 						<div class="square-box">About me</div>
 					</div>
 				</div>
+				
+				<script>
+					document.getElementById("Stats").onclick = function() {
+						document.getElementById("Stats").style.display = "none"; 
+						document.getElementById("Stats1").style.display = "inline-block"; 
+					} 
+
+					document.getElementById("Stats1").onclick = function() {
+						document.getElementById("Stats1").style.display = "none"; 
+						document.getElementById("Stats").style.display = "inline-block"; 
+					}
+				</script>
+				
+				
   
 				<div class="column middle">
 					
@@ -65,9 +87,41 @@
 						<span class="fa fa-star"></span>
 						<span class="fa fa-star"></span>
 					</div>
-					
+
+					<div class="navbar">
+						<div class="dropdown">
+							<button class="dropbtn" onclick="myFunction()">Edit profile
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content" id="myDropdown">
+								<a href="#">Username</a>
+								<a href="#">Password</a>
+								<a href="#">Profile Picture</a>
+								<a href="#">Update Bio</a>
+								<a href="#">Log Out</a>
+							</div>
+						</div> 
+					</div>
 					
 				</div>
+  
+				<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
   
 				<div class="column side">
 					<div class="box-outer">
