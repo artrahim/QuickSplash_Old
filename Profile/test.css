@@ -242,12 +242,12 @@ body {
   display: block;
 }
 
-#Stats1{
+#Stats1, #About1, #Achievements1, #Recent1{
 	display: none;
 	margin:0;
 }
 
-#Stats1 p {
+#Stats1 p, #About1 p, #Achievements1 p, #Recent1 p {
 	height: 5px;
 	line-height: 0;
 }

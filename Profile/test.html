@@ -7,15 +7,10 @@
 		<link href="test.css" type="text/css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		
-		<script>
-			function goBack() {
-				window.history.back();
-			}
-		</script>
 		
 		<div class="box">
 			<div class="row header">
@@ -28,8 +23,6 @@
 						<h2 class="Sign">Profile Page</h2>
 					</div>
 				</div>
-			
-				
 				<h4 class="username">USERNAME</h4>
 				<div class="circle"></div>
 				<ul class="level">
@@ -41,45 +34,45 @@
 				</br></br>
 			</div>
 			
+			
+			
+			<!-- User profile contents -->
 			<div class="row content">
 				<div class="column side">
 					<div class="box-outer">
 						</br></br>
 						<div class="square-box" id="Stats">Player stats</div>
 						<div class="square-box" id="Stats1">
-							<p>Total points</p>
-							<p>Total games played</p>
-							<p>Total Hours played</p>
-							<p>Best response time</p>
+							<p>Total points: 1000</p>
+							<p>Total games played: 111</p>
+							<p>Total Hours played: 2000HRS</p>
+							<p>Best response time: 3 seconds</p>
 							<p>Most voted question of all time</p>
 							<p>Funniest response</p>
 						</div>
 						</br></br>
-						<div class="square-box">About me</div>
+						<div class="square-box" id="About">About me</div>
+						<div class="square-box" id="About1">
+							<p>Name: Dj Niro</p>
+							<p>Gender: Male</p>
+							<p>Email: Supahotfire</p>
+							<p>Fav Quote: Another One!</p>
+						
+						</div>
 					</div>
 				</div>
 				
-				<script>
-					document.getElementById("Stats").onclick = function() {
-						document.getElementById("Stats").style.display = "none"; 
-						document.getElementById("Stats1").style.display = "inline-block"; 
-					} 
-
-					document.getElementById("Stats1").onclick = function() {
-						document.getElementById("Stats1").style.display = "none"; 
-						document.getElementById("Stats").style.display = "inline-block"; 
-					}
-				</script>
 				
 				
-  
+				<!-- Middle section -->
 				<div class="column middle">
-					
-					
+					<!-- Profile pic -->
 					<div class="box-inner">
 						</br>
 						<img src="profilepic.jpg" alt="profilepic" class="image">
 					</div>
+					
+					<!-- 5 star rating -->
 					<div>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
@@ -88,6 +81,7 @@
 						<span class="fa fa-star"></span>
 					</div>
 
+					<!-- Edit profile nav bar -->
 					<div class="navbar">
 						<div class="dropdown">
 							<button class="dropbtn" onclick="myFunction()">Edit profile
@@ -102,40 +96,35 @@
 							</div>
 						</div> 
 					</div>
-					
 				</div>
   
-				<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
   
 				<div class="column side">
 					<div class="box-outer">
 						</br></br>
-						<div class="square-box">Achievements</div>
+						<div class="square-box" id="Achievements">Achievements</div>
+						<div class="square-box" id="Achievements1">
+							<p>First win or loss</p>
+							<p>Reach lvl rookie</p>
+							<p>Win game with score x</p>
+							<p>Win streak</p>
+						</div>
 						</br></br>
-						<div class="square-box">Recent Activity</div>
+						<div class="square-box" id="Recent">Recent Activity</div>
+						<div class="square-box" id="Recent1">
+							<p>Recent Game history</p>
+							<p>Players recently played with</p>
+							<p>Most recent achievements</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		
-			<div class="row footer">
-			</div>
+			<!-- css height purpose -->
+			<div class="row footer"></div>
 		</div>
+		
+		<script type="text/javascript" src="profile.js"></script>
 	
 	</body>
 </html>
