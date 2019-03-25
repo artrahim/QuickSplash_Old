@@ -6,13 +6,7 @@
 /* Amatic SC  */
 
 
-
-
-
-
-
-html,
-body {
+html,body {
   height: 100%;
   margin: 0
 }
@@ -31,6 +25,35 @@ body {
   /*border: 1px dotted grey;*/
 }
 
+
+
+/********* Header *************/
+
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.header {
+  background-color: silver;
+  text-align: center;
+  min-width: 200px;
+}
+
+
+
+/* Back button and Profile page sign*/
+.header-box{
+	display: flex;
+  justify-content: center;
+  background-color: green;
+  text-align: left;
+}
+
 .backButton{
 	position: fixed;
   top: 0;
@@ -42,35 +65,11 @@ body {
 .center h2{
 	margin:0;
 }
+/*******************************************/
 
-.header {
-  background-color: silver;
-  text-align: center;
-  min-width: 200px;
-}
 
-.header-box{
-	display: flex;
-  justify-content: center;
-  background-color: green;
-  text-align: left;
-}
 
-.level {
-  column-count: 2;
-  column-gap: 0;
-  width: 100px;
-  margin:0;
-  padding:0;
-  display: inline-block;
-}
-.lvl-box {
-  display: inline-block;
-  width: 85px;
-  text-align: center;
-  border: 1px solid black;
-}
-
+/* Username with online/offline square color and lvl*/
 .username{
 	border: 1px solid white;
 	max-width: 30%;
@@ -92,18 +91,26 @@ body {
   display: inline-block;
 }
 
-.UserInfo{
+.level {
   column-count: 2;
   column-gap: 0;
-  width: 200px;
-}
-.Userdata {
+  width: 100px;
+  margin:0;
+  padding:0;
   display: inline-block;
-  color: black;
+}
+.lvl-box {
+  display: inline-block;
+  width: 85px;
   text-align: center;
   border: 1px solid black;
 }
+/*******************************************/
 
+
+
+
+/* Last online box */
 .online{
 	border: 1px solid white;
 	max-width: 30%;
@@ -111,17 +118,13 @@ body {
 	display: inline-block;
 	min-width: 200px;
 }
+/*******************************************/
+/*******************************************/
 
-.box .row.header {
-  flex: 0 1 auto;
-  /* The above is shorthand for:
-  flex-grow: 0,
-  flex-shrink: 1,
-  flex-basis: auto
-  */
-}
-/************************************/
 
+
+
+/********* Header *************/
 .box .row.content {
   flex: 1 1 auto;
   min-width: 200px;
@@ -166,17 +169,11 @@ body {
 .box-inner{
 	text-align: center;
 }
+/*******************************************/
 
-.square-box{
-	width: 85%;
-	height: 34vh;
-	border: 1px solid black;
-	display: inline-block;
-	border-radius:5px;
-		vertical-align: middle;
-	line-height: 34vh;
-}
 
+
+/* Middle picture/star rating/edit profile*/
 .image{
 	width:80%;
 	border-radius: 50%;
@@ -241,6 +238,21 @@ body {
 .show {
   display: block;
 }
+/*******************************************/
+
+
+
+/* Side Info boxes */
+.square-box{
+	width: 85%;
+	height: 34vh;
+	border: 1px solid black;
+	display: inline-block;
+	border-radius:5px;
+		vertical-align: middle;
+	line-height: 34vh;
+}
+
 
 #Stats1, #About1, #Achievements1, #Recent1{
 	display: none;
@@ -251,6 +263,9 @@ body {
 	height: 5px;
 	line-height: 0;
 }
+/*******************************************/
+
+
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -263,9 +278,13 @@ body {
 	  /*display: none;*/
   }
 }
+/*******************************************/
+/*******************************************/
 
 
-/************************************/
+
+
+/********* Footer *************/
 .box .row.footer {
   flex: 0 1 0px;
 }
