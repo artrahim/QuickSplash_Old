@@ -6,6 +6,7 @@ import Home from "./Home";
 import CreateLobby from "./CreateLobby";
 import JoinLobby from "./JoinLobby";
 import Game from "./Game";
+import Voting from "./Voting";
 
 var socket;
 
@@ -26,6 +27,7 @@ class Main extends Component {
                         <Route path="/createLobby" component={CreateLobby}/>
                         <Route path="/joinLobby" component={JoinLobby}/>
                         <Route path="/game" component={Game}/>
+                        <Route path="/vote" component={Voting}/>
                     </HashRouter>
                 </div>
             </div>
